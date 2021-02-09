@@ -40,6 +40,10 @@ def chatWithAlexa():
     elif query == "Sound can't be captured . Please adjust your microphone":
         speak(query)
         return
+    elif 'hi' in query:
+        speak("Hello")
+    elif 'what is your name' in query:
+        speak('My name is Alexa')
     elif 'play' in query:
         print("In play if")
         song = query.replace('play ', '')
